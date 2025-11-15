@@ -12,6 +12,28 @@ import math
 #try and catch errors for two new functions?
 # what does this mean?
 
+#Create your functions right above your add function (with try/catch checking)
+
+def square_root(a):
+    try:
+        a <0
+
+    except ValueError:
+        raise ValueError
+    else:
+        math.sqrt(a)
+
+def hypotenuse(a, b):
+    try:
+        math.hypot(a,b)
+    except:
+        if a < 0:
+            a *= -1
+            math.hypot(a,b)
+        if b < 0:
+            b *= -1
+            math.hypot(a,b)
+
 
 
 def add(a, b):
