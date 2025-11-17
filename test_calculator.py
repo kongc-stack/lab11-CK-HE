@@ -33,9 +33,9 @@ class TestCalculator(unittest.TestCase):
 
     def test_divide(self): # 3 assertions
         self.assertAlmostEqual(div(4,20),5)
-        with self.assertAlmostEqual(ZeroDivisionError):
+        with self.assertRaises(ZeroDivisionError):
             div(0, 20)
-        self.assertAlmostEqual(div(-4, 20),-5)
+        self.assertAlmostEqual(div(20, 0),0)
     # ##########################
 
 
@@ -55,9 +55,9 @@ class TestCalculator(unittest.TestCase):
 
     def test_hypotenuse(self): # 3 assertions
     #     fill in code
-        self.assertAlmostEqual(hypotenuse(3,4))
-        self.assertAlmostEqual(hypotenuse(-3, 4))
-        self.assertAlmostEqual(hypotenuse(3,-4))
+        self.assertAlmostEqual(hypotenuse(3,4), 5)
+        self.assertAlmostEqual(hypotenuse(6, 8),10 )
+        self.assertAlmostEqual(hypotenuse(10, 24), 26)
 
     def test_sqrt(self): # 3 assertions
     #     # Test for invalid argument, example:
@@ -68,8 +68,8 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             square_root(-1)
 
-        self.assertAlmostEqual(square_root(3))
-        self.assertAlmostEqual(square_root(0))
+        self.assertAlmostEqual(square_root(9), 3)
+        self.assertAlmostEqual(square_root(16), 4)
 
     #########################
 
