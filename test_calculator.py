@@ -71,7 +71,7 @@ class TestCalculator(unittest.TestCase):
         self.assertAlmostEqual(square_root(3))
         self.assertAlmostEqual(square_root(0))
 
-    ##########################
+    #########################
 
 # Do not touch this
 if __name__ == "__main__":
