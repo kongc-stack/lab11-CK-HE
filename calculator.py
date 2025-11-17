@@ -13,7 +13,7 @@ def square_root(a):
     else:
         return math.sqrt(a)
 
-def hypotenuse(a, b):
+def hypotenuse(a, b): #
     try:
         return math.hypot(a,b)
     except:
