@@ -1,3 +1,7 @@
+# https://github.com/kongc-stack/lab11-CK-HE.git
+# Partner 1: Catherine Kong
+# Partner 2: Hannah Elotmani
+
 import unittest
 from calculator import *
 
