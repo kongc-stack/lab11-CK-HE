@@ -1,8 +1,8 @@
 import math
 
-#https://github.com/kongc-stack/lab11-CK-HE.git
-#Partner 1: Catherine Kong
-#Partner 2: Hannah Elotmani
+# https://github.com/kongc-stack/lab11-CK-HE.git
+# Partner 1: Catherine Kong
+# Partner 2: Hannah Elotmani
 
 def square_root(a):
     try:
