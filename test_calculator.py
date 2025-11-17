@@ -45,7 +45,7 @@ class TestCalculator(unittest.TestCase):
     #     fill in code
 
         with self.assertRaises(ValueError):
-            logarithm(-1, 1)
+            logarithm(-1, 1) #
 
 
 
