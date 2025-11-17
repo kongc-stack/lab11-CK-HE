@@ -11,18 +11,18 @@ def square_root(a):
     except ValueError:
         raise ValueError
     else:
-        math.sqrt(a)
+        return math.sqrt(a)
 
 def hypotenuse(a, b):
     try:
-        math.hypot(a,b)
+        return math.hypot(a,b)
     except:
         if a < 0:
             a *= -1
-            math.hypot(a,b)
+            return math.hypot(a,b)
         if b < 0:
             b *= -1
-            math.hypot(a,b)
+            return math.hypot(a,b)
 
 
 def add(a, b):
