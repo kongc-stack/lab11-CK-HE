@@ -33,7 +33,8 @@ class TestCalculator(unittest.TestCase):
 
     def test_divide(self): # 3 assertions
         self.assertAlmostEqual(div(4,20),5)
-        self.assertAlmostEqual(div(0,20 ), ZeroDivisionError)
+        with self.assertAlmostEqual(ZeroDivisionError):
+            div(0, 20)
         self.assertAlmostEqual(div(-4, 20),-5)
     # ##########################
 
@@ -54,9 +55,9 @@ class TestCalculator(unittest.TestCase):
 
     def test_hypotenuse(self): # 3 assertions
     #     fill in code
-        self.assertAlmostEqual(3,4)
-        self.assertAlmostEqual(-3, 4)
-        self.assertAlmostEqual(3,-4)
+        self.assertAlmostEqual(hypotenuse(3,4))
+        self.assertAlmostEqual(hypotenuse(-3, 4))
+        self.assertAlmostEqual(hypotenuse(3,-4))
 
     def test_sqrt(self): # 3 assertions
     #     # Test for invalid argument, example:
@@ -67,10 +68,10 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             square_root(-1)
 
-        self.assertAlmostEqual(3)
-        self.assertAlmostEqual(0)
+        self.assertAlmostEqual(square_root(3))
+        self.assertAlmostEqual(square_root(0))
 
-    ##########################
+    #########################
 
 # Do not touch this
 if __name__ == "__main__":
