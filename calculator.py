@@ -1,7 +1,8 @@
+# https://github.com/kongc-stack/lab11-CK-HE.git
+# Partner 1: Catherine Kong
+# Partner 2: Hannah Elotmani
+
 import math
-
-
-#Create your functions right above your add function (with try/catch checking)
 
 def square_root(a):
     try:
