@@ -35,7 +35,7 @@ def subtract(a, b):
 
 
 def logarithm(a, b):
-    if a != "e" or a < 1 or b < 1:
+    if a == "e" or a < 1 or b < 1:
         raise ValueError
     else:
         return math.log(b, a)# use math library + raise ValueError
