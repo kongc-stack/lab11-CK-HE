@@ -21,5 +21,53 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             log(3, 0)
 
+    ######## Partner 1
+    def test_multiply(self): # 3 assertions
+        self.assertAlmostEqual(mul(4, 5), 20)
+        self.assertAlmostEqual(mul(-4, -5),20)
+        self.assertAlmostEqual(mul(4, 0), 0)
+
+    def test_divide(self): # 3 assertions
+        self.assertAlmostEqual(div(4,20),5)
+        self.assertAlmostEqual(div(0,20 ), ZeroDivisionError)
+        self.assertAlmostEqual(div(-4, 20),-5)
+    # ##########################
+
+
+
+    ######## Partner 1
+    def test_log_invalid_argument(self): # 1 assertion
+    #     # call log function inside, example:
+    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
+    #     #     logarithm(0, 5)
+    #     fill in code
+
+        with self.assertRaises(ValueError):
+            logarithm(-1, 1) #
+
+
+
+
+    def test_hypotenuse(self): # 3 assertions
+    #     fill in code
+        self.assertAlmostEqual(3,4)
+        self.assertAlmostEqual(-3, 4)
+        self.assertAlmostEqual(3,-4)
+
+    def test_sqrt(self): # 3 assertions
+    #     # Test for invalid argument, example:
+    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
+    #     #    square_root(NUM)
+    #     # Test basic function
+    #     fill in code
+        with self.assertRaises(ValueError):
+            square_root(-1)
+
+        self.assertAlmostEqual(3)
+        self.assertAlmostEqual(0)
+
+    ##########################
+
+# Do not touch this
 if __name__ == "__main__":
     unittest.main()
